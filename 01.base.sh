@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter lightdm-gtk-gree
 sudo pacman -S --noconfirm firefox qtile picom rofi alacritty xfce4-terminal vim geany thunar ranger mpv
 # Configuration and utilities
 sudo pacman -S --noconfirm lxappearance nitrogen numlockx xdg-user-dirs udiskie polkit pacman-contrib thunar-volman xfce4-notifyd polkit-gnome p7zip pulseaudio pavucontrol neofetch htop
-# fuse 
+# fuse sshd acpid openssh
 # Themes and fonts
 sudo pacman -S --noconfirm arc-gtk-theme arc-icon-theme ttf-jetbrains-mono
 
@@ -28,7 +28,11 @@ sudo pacman -S --noconfirm arc-gtk-theme arc-icon-theme ttf-jetbrains-mono
 # Services
 sudo systemctl enable lightdm
 sudo systemctl enable NetworkManager
-sudo systemctl enable reflector.service
+#sudo systemctl enable fstrim.timer 
+sudo systemctl enable reflector.timer
+sudo systemctl enable cups.service
+#sudo systemctl enable sshd
+sudo systemctl enable acpid
 
 # Config files
 cp -Rf .config ~/
