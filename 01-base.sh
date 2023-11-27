@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter lightdm-gtk-gree
 sudo pacman -S --noconfirm firefox qtile picom rofi alacritty xfce4-terminal vim geany thunar ranger mpv
 # Configuration and utilities
 sudo pacman -S --noconfirm lxappearance nitrogen numlockx xdg-user-dirs udiskie polkit pacman-contrib thunar-volman xfce4-notifyd polkit-gnome p7zip pulseaudio pavucontrol neofetch htop
-# fuse sshd acpid openssh
+# fuse sshd acpid openssh tlp
 # Themes and fonts
 sudo pacman -S --noconfirm arc-gtk-theme arc-icon-theme ttf-jetbrains-mono
 
